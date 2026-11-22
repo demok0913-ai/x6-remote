@@ -67,6 +67,9 @@ def main():
             run('install_name_tool', '-delete_rpath', path, str(binary))
     if '@executable_path/../Frameworks' not in rpaths:
         run('install_name_tool', '-add_rpath', '@executable_path/../Frameworks', str(binary))
+    if args.configuration == 'release':
+        # Remove linker debug-map object paths before applying the final signature.
+        run('xcrun', 'strip', '-S', str(binary))
     try:
         revision = subprocess.check_output(['git', 'rev-parse', 'HEAD'], text=True, stderr=subprocess.DEVNULL).strip()
         dirty = bool(subprocess.check_output(['git', 'status', '--porcelain'], text=True).strip())
