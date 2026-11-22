@@ -1,5 +1,14 @@
 # Third-party notices
 
+## Sparkle
+
+- Project: Sparkle
+- Source: <https://github.com/sparkle-project/Sparkle>
+- Version: 2.9.6, pinned by `Package.resolved`
+- License: MIT, with additional bundled third-party notices
+
+The executable links to the bundled Sparkle framework inherited from the public base project. The X6 entry point does not start the normal updater. The complete upstream license and bundled notices are included in `licenses/Sparkle-LICENSE.txt` in source and `Contents/Resources/Sparkle-LICENSE.txt` in the app.
+
 ## Oxanium
 
 - Project: Google Fonts Oxanium

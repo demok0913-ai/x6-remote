@@ -53,6 +53,7 @@ def main():
         shutil.copy2(root / 'Resources' / name, resources / name)
     for name in ['LICENSE.md', 'COPYRIGHT.md', 'THIRD_PARTY_NOTICES.md', 'ASSETS.md']:
         shutil.copy2(root / name, resources / name)
+    shutil.copy2(root / 'licenses' / 'Sparkle-LICENSE.txt', resources / 'Sparkle-LICENSE.txt')
     info = plistlib.loads((root / 'Resources' / 'X6-Info.plist').read_bytes())
     (contents / 'Info.plist').write_bytes(plistlib.dumps(info))
     # Eliminate absolute SwiftPM build paths from the distributed executable.
