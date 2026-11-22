@@ -29,6 +29,9 @@ def main():
     command = ['xcrun', 'swift', 'build', '--disable-keychain', '--jobs', '2',
                '--scratch-path', str(root / '.build' / 'x6'),
                '-c', args.configuration, '-Xswiftc', '-DX6_ADAPTER_PREVIEW',
+               '-Xswiftc', '-file-prefix-map', '-Xswiftc', f'{root}=.',
+               '-Xswiftc', '-debug-prefix-map', '-Xswiftc', f'{root}=.',
+               '-Xcc', f'-ffile-prefix-map={root}=.',
                '--product', 'RemoteMic']
     run(*command, env=env)
     bin_dir = Path(subprocess.check_output(command + ['--show-bin-path'], env=env, text=True).strip())
