@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>en</string>
+	<key>CFBundleDisplayName</key>
+	<string>X6遥控</string>
+	<key>CFBundleExecutable</key>
+	<string>RemoteMic</string>
+	<key>CFBundleIconFile</key>
+	<string>X6Remote.icns</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.hd838a.RemoteMic.X6Preview</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>X6遥控</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.1.1</string>
+	<key>CFBundleVersion</key>
+	<string>13</string>
+	<key>LSMinimumSystemVersion</key>
+	<string>14.0</string>
+	<key>NSHumanReadableCopyright</key>
+	<string>GPL-3.0-only</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>Only after you select a USB input and click a virtual microphone test, route that input to the selected virtual microphone.</string>
+	<key>NSPrincipalClass</key>
+	<string>NSApplication</string>
+	<key>SayAllSourceBaseTree</key>
+	<string>85a9148ef751fb0ba962ceda9ea584c54f56331a</string>
+	<key>X6BuildChannel</key>
+	<string>community-public-source</string>
+</dict>
+</plist>

@@ -1,0 +1,13 @@
+.build/
+.swiftpm/
+dist/
+.DS_Store
+.env
+.env.*
+*.p12
+*.p8
+*.key
+*.pem
+*.keychain*
+*.plist.backup
+__pycache__/
